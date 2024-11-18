@@ -6,9 +6,6 @@ gem 'rackup'
 gem 'thin'
 gem 'sinatra-contrib'
 
-# gem 'activerecord'
-# gem 'sinatra-activerecord'
-
 gem 'json'
 gem 'pg'
 
@@ -23,3 +20,4 @@ gem 'dotenv'
 gem 'webrick'
 gem 'puma'
 gem 'falcon'
+gem 'to_api'
