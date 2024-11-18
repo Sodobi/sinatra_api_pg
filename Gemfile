@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'sinatra' 
-gem 'sinatra-contrib', "~> 4.0"
+gem 'sinatra'
 
-gem 'activerecord'
-gem 'sinatra-activerecord'
+gem 'rackup'
+gem 'thin'
+gem 'sinatra-contrib'
+
+# gem 'activerecord'
+# gem 'sinatra-activerecord'
 
 gem 'json'
 gem 'pg'
@@ -12,9 +15,11 @@ gem 'pg'
 gem 'sequel'
 gem 'sequel-seed'
 
-gem 'rackup'    
+gem 'rack'
 gem 'rake'
 
 gem 'dotenv'
 
-gem "puma", "~> 6.4"
+gem 'webrick'
+gem 'puma'
+gem 'falcon'

@@ -1,0 +1,11 @@
+default: &default # Создание базовой конфигурации, которая может быть использована в других средах с помощью ссылки.
+  adapter: postgresql
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000 # Макс. время подключения в мс
+
+development:  # Начало секции для конфигурации базы данных в режиме разработки.
+  <<: *default
+  database: db_sinatra
+  username: sodobi
+  password: 210402

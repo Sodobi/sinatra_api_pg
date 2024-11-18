@@ -1,0 +1,3 @@
+ENV['DATABASE'] = 'db_sinatra' if ENV['RACK_ENV'] == 'development'
+ENV['DATABASE'] = 'db_sinatra' if ENV['RACK_ENV'] == 'test'
+ENV['DATABASE'] = 'db_sinatra' if ENV['RACK_ENV'] == 'production'
